@@ -1,8 +1,8 @@
 # Introduction
-Hello Dear Developer, we are so happy that you are going to join us and hope have perfect days.
+Hello Dear developer, we are so happy that you are going to join us and hope have perfect days together.
 
 # Task description
-We want you give us an object which helps us to sort our list of strings, please pay attention that we don't want to sort list we want to sort our strings. for instance:
+We want you give us an object which helps us to sort our list of strings. Please pay attention that we don't want to sort the list, we want to sort our strings. For instance:
 
 ```bash
 input : 
@@ -21,21 +21,21 @@ output:
 ]
 ```
 
-you have not to change array elements order
+You shouldn't change the array elements order
 
 
-You should implement three functions :
+You should implement three functions:
 
 - provideData
 - toObject
 - vowelsToCapital
 
 #### provideData :
-this function provides data to our object
+This function provides data to our object
 
 #### toObject
 
-converts our list to object. for example:
+Converts our list to object. for example:
 ```bash
 input :
 [
@@ -53,7 +53,7 @@ output:
 }
 ```
 #### vowelsToCapital
-this functions Capitalize vowels (E, I, O, A, U)
+This functions Capitalize vowels (E, I, O, A, U)
 
 ```bash
 input:
@@ -72,7 +72,7 @@ output
 ]
 ```
 
-And we also want to call these functions in any order and optionally but provideData always will be called, for example these statements must be equal:
+And we also want to call these functions any order but provideData always will be called. For example these statements must be equal:
 
 ```bash
   const result1 = makeObject().vowelsToCapital().toObject().provideData(data);
