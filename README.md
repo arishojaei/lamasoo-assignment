@@ -72,7 +72,7 @@ output
 ]
 ```
 
-And we also want to call these functions any order but provide data always will be called, for example these statements must be equal:
+And we also want to call these functions in any order and optionally but provideData always will be called, for example these statements must be equal:
 
 ```bash
   const result1 = makeObject().vowelsToCapital().toObject().provideData(data);
