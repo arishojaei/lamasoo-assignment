@@ -20,7 +20,7 @@ test('test_result', () => {
 test('test_result_to_capital', () => {
   const result = makeObject().vowelsToCapital().provideData(data);
   expect(result).toEqual([
-    'EfhIIIIrsssstttt',
+    'EfhIIIrsssstttt',
     'AAcEEghlnnOOrst',
     '#12367788@EOstt',
     ')--2333:AEElmpx'
