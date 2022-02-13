@@ -43,7 +43,7 @@ test('test_result_capital_to_object', () => {
 
   expect(result1).toStrictEqual(result2);
   expect(result1).toEqual({
-    0: 'EfhIIIIrsssstttt',
+    0: 'EfhIIIrsssstttt',
     1: 'AAcEEghlnnOOrst',
     2: '#12367788@EOstt',
     3: ')--2333:AEElmpx',
