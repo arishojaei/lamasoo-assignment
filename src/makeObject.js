@@ -29,40 +29,32 @@ const uppercaseVowels = function (value) {
 }
 
 function makeObject() {
+  let _functionsQueue = [];
+
   return {
-    _input: [],
-    _functionsQueue: [],
+    data: [],
 
     vowelsToCapital() {
-      this._functionsQueue.push(value => uppercaseVowels(value));
+      _functionsQueue.unshift(value => uppercaseVowels(value));
       return this;
     },
 
     toObject() {
-      this._functionsQueue.push(value => Object.assign({}, value));
+      _functionsQueue.push(value => Object.assign({}, value));
       return this;
     },
 
-    provideData(input) {
-      this._input = sortString(input)
+    provideData(payload) {
+      this.data = sortString(payload)
 
-      for (const fn of this._functionsQueue) {
-        this._input = fn(this._input);
+      for (const fn of _functionsQueue) {
+        this.data = fn(this.data);
       }
 
-      return this._input;
+      return this.data;
     }
   }
 }
-
-const data = [
-  'thisisfirsttest',
-  'anotherlongcase',
-  '8761o8372@test#',
-  '--:)example3233'
-];
-
-console.log(makeObject());
 
 // do NOT remove the following line
 module.exports = makeObject;
